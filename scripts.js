@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".logo__img").on("click",function(){alert("ff")})});

@@ -1,0 +1,131 @@
+
+
+#carousel
+
+  position: relative
+  height: 500px
+  
+  // transform: translateY(-50%)
+  overflow: hidden
+  margin: auto
+  margin-top: 60px
+  width: 90%
+
+  div
+    position: absolute
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s
+    opacity: 1
+
+    img
+      width: 300px
+      transition: width 1s
+      box-shadow: 0 15px 20px 0px rgba(0,0,0, .1)
+
+    &.hideLeft
+      left: 0%
+      opacity: 0
+      transform: translateY(90%) translateX(0%)
+
+      img
+        width: 100px
+
+    &.hideRight
+      left: 100%
+      opacity: 0
+      transform: translateY(90%) translateX(-100%)
+      img
+        width: 100px
+
+    &.prev
+      z-index: 5
+      left: 30%
+      transform: translateY(10%) translateX(-30%)
+
+      img
+        width: 250px
+
+    &.prevLeftSecond
+      z-index: 4
+      left: 15%
+      transform: translateY(25%) translateX(-10%)
+  
+
+      img
+        width: 200px
+
+    &.prevLeftSecond_2
+      z-index: 3
+      left: 10%
+      transform: translateY(50%) translateX(-20%)
+      opacity: .7
+
+      img
+        width: 150px
+
+    &.selected
+      z-index: 10
+      left: 50%
+      transform: translateY(0px) translateX(-50%)
+
+    &.next
+      z-index: 5
+      left: 70%
+      transform: translateY(10%) translateX(-70%)
+
+      img
+        width: 250px
+
+    &.nextRightSecond
+      z-index: 4
+      left: 85%
+      transform: translateY(25%) translateX(-90%)
+      
+
+      img
+        width: 200px
+
+    &.nextRightSecond_2
+      z-index: 3
+      left: 90%
+      transform: translateY(50%) translateX(-80%)
+      opacity: .7
+
+      img
+        width: 150px
+
+
+@media only screen and(max-width: 620px)
+  #carousel
+    margin-top: 300px
+    height: 450px
+    div
+      img
+        width: 200px
+      &.prev, &.next
+        img
+          width: 150px
+      &.nextRightSecond, &.prevLeftSecond
+        img
+          width: 120px
+      &.nextRightSecond_2, &.prevLeftSecond_2
+        img
+          width: 90px
+@media only screen and(max-width: 620px)
+  #carousel
+    height: 350px
+    margin-top: 40px
+    div
+      img
+        width: 150px
+      &.prev, &.next
+        img
+          width: 120px
+      &.nextRightSecond, &.prevLeftSecond
+        img
+          width: 100px
+      &.nextRightSecond_2, &.prevLeftSecond_2
+        img
+          width: 60px
+      
+
+

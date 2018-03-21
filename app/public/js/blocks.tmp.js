@@ -1,4 +1,25 @@
-$(document).ready(function(){$('.hamburger').on('click', function(){
+$(document).ready(function(){$('.owl-test').owlCarousel({
+    loop:true,
+    margin: 0,
+    nav:true,
+    center:true,
+    lazyLoad: true,
+  
+    responsive:{
+        0:{
+            items:5
+        },
+        600:{
+            items:5
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+
+
+$('.hamburger').on('click', function(){
 	$('.hamburger > .hamburger__bar').toggleClass('hamburger__bar_active_true');
 	$('.page').toggleClass('page_scroll_false');
 	$('.menu-mobile').toggleClass('menu-mobile_visible_true');

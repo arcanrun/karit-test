@@ -1,4 +1,14 @@
 .advantages__item
 	display: flex
-	flex-flow: wrap
+	flex-flow: wrap row
 	align-items: center
+	margin-top: 50px
+	margin-left: 20px
+	&:first-child
+		margin-left: 0px
+@media only screen and (max-width: 1115px)
+	.advantages__item
+		margin-left: 0px
+@media only screen and (max-width: 614px)
+	.advantages__item
+		flex-flow: wrap column

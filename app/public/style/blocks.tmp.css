@@ -42,7 +42,7 @@
 .list__itm{list-style-type:none;font-family:Roboto-Regular;font-size:14px;line-height:2em}.list__itm:before{content:"\f058";font-family:'Font Awesome 5 Free';font-weight:900;padding-right:20px}
 .hamburger__bar{background:#fff;display:block;position:absolute;width:30px;height:3px;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-box-shadow:0 2px 5px rgba(0,0,0,.5);box-shadow:0 2px 5px rgba(0,0,0,.5);-webkit-transition:.2s;transition:.2s}.hamburger__bar:after,.hamburger__bar:before{content:'';position:absolute;width:30px;height:3px;background:#fff;-webkit-box-shadow:0 2px 5px rgba(0,0,0,.5);box-shadow:0 2px 5px rgba(0,0,0,.5);-webkit-transition:.2s;transition:.2s}.hamburger__bar:before{top:-10px}.hamburger__bar:after{top:10px}
 .page_scroll_false{overflow:hidden}
-.img-txt-blc__bg{position:absolute;height:100%;width:100%;z-index:1;background:url(../img/img-text-iphone.png) left top no-repeat;background-size:40%}@media only screen and (max-width:940px){.img-txt-blc__bg{background-size:65%}}@media only screen and (max-width:745px){.img-txt-blc__bg{background-size:65%;opacity:.4}}@media only screen and (max-width:540px){.img-txt-blc__bg{background-size:100%;opacity:.2;background-position:center}}
+.img-txt-blc__bg{position:absolute;height:100%;width:100%;z-index:1;background:url(../img/img-text-iphone.png) left top no-repeat;background-size:40%}@media only screen and (max-width:940px){.img-txt-blc__bg{background-size:65%}}@media only screen and (max-width:745px){.img-txt-blc__bg{background-position:center;background-size:65%;opacity:.4}}@media only screen and (max-width:540px){.img-txt-blc__bg{background-size:100%;opacity:.2;background-position:center}}
 .title-section__title{font-family:Dosis-Medium;font-size:36px;color:#000}
 .title-section_ta_left{text-align:left}
 .section__divider{margin-top:115px;margin-bottom:115px}@media only screen and (max-width:720px){.section__divider{margin-top:50px;margin-bottom:50px}}
@@ -57,4 +57,14 @@
 .carousel__btn_left{position:absolute;top:50%;left:0;margin-left:10px}@media only screen and (max-width:620px){.carousel__btn_left{z-index:1;left:25%;top:85%}}
 .carousel__btn_right{position:absolute;right:0;top:50%;margin-right:10px}@media only screen and (max-width:620px){.carousel__btn_right{z-index:1;right:25%;top:85%}}
 .hamburger_visible_true{display:block;z-index:51}
+.card{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-flow:wrap;flex-flow:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}@media only screen and (max-width:1073px){.card{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}}
+.card__title{font-size:20px;font-family:Dosis-Regular;padding-top:12px;padding-bottom:16px}
+.card__label{-webkit-transition:.2s;transition:.2s;font-family:Dosis-Medium;font-size:48px;background:#fff;padding-top:30px;padding-bottom:54px;-webkit-clip-path:polygon(50% 80%,100% 60%,100% 0,0 0,0 60%);clip-path:polygon(50% 80%,100% 60%,100% 0,0 0,0 60%)}
+.card__list{font-family:Roboto-Light;font-size:14px;color:#777;list-style-type:none;margin:auto auto auto -40px;display:block}
+.card__list-item{border-bottom:1px dashed #eee;padding-bottom:10px;padding-top:10px;width:80%;margin:auto}.card__list-item:last-child{border-bottom:none}
+.card__desc{color:#aaa;font-size:14px;font-family:Roboto-Light;padding-top:53px}
+.card__btn{margin-top:20px;display:inline-block;border:2px solid #eee;padding-left:40px;padding-right:40px;font-size:14px;margin-bottom:40px}
+.card__item{width:263px;background:#f7fafc;text-align:center;-webkit-transition:.2s;transition:.2s;margin-top:30px}.card__item:hover{background:#fff;-webkit-box-shadow:0 12px 30px 0 rgba(0,0,0,.2);box-shadow:0 12px 30px 0 rgba(0,0,0,.2)}.card__item:hover .card__label{color:#fff;background:-webkit-gradient(linear,left top,right top,from(#fd712c),to(#f31e7a));background:linear-gradient(to right,#fd712c,#f31e7a)}@media only screen and (max-width:1073px){.card__item{margin:10px}}
+.title-section_mb_50{margin-bottom:50px}
+.section_pb_120{padding-bottom:120px}
 /*# sourceMappingURL=blocks.tmp.css.map */

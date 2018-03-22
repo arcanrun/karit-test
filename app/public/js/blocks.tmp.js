@@ -61,24 +61,36 @@ $('#next').click(function(e) {
   e.preventDefault();
   moveToSelected('next');
 });
-$('.owl-test').owlCarousel({
+$('.owl-carousel').owlCarousel({
     loop:true,
-    margin: 0,
-    nav:true,
+    margin: 30,
+    nav : true,
+    autoWidth:true,
+    navText: ['<i class="fas fa-long-arrow-alt-left"></i>','<i class="fas fa-long-arrow-alt-right"></i>'],
+    navClass: ['btn owlCarousel-left','btn owlCarousel-right'],
     center:true,
     lazyLoad: true,
-  
+    dots: false,
+    items: 3,
     responsive:{
         0:{
-            items:5
+            items:1
         },
         600:{
-            items:5
+            items:1
         },
         1000:{
-            items:5
+            items:3
         }
     }
+});
+
+
+$('.hamburger').on('click', function(){
+	$('.hamburger > .hamburger__bar').toggleClass('hamburger__bar_active_true');
+	$('.page').toggleClass('page_scroll_false');
+	$('.menu-mobile').toggleClass('menu-mobile_visible_true');
+
 });
 
 
@@ -138,11 +150,7 @@ win.resize(function(){
 
 
 
-$('.hamburger').on('click', function(){
-	$('.hamburger > .hamburger__bar').toggleClass('hamburger__bar_active_true');
-	$('.page').toggleClass('page_scroll_false');
-	$('.menu-mobile').toggleClass('menu-mobile_visible_true');
-
-});
-
-});
+$('.video-blc__btn').on('click', function(e){
+	e.preventDefault();
+	$('.video-blc__iframe').toggleClass('video-blc__iframe_visible_false').css('z-index', '1');
+});});

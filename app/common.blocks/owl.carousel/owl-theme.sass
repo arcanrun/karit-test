@@ -1,0 +1,26 @@
+.owl-carousel 
+	margin-bottom: 100px
+	.owl-stage
+		height: 300px
+	.owl-stage-outer
+		width: 90%
+		margin: auto
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item
+	transform: translate3d(-65px, 0, 0)
+
+.owl-theme 
+	.btn
+		position: absolute
+		top: 30%
+	.owlCarousel-left
+		left: 0
+	.owlCarousel-right
+		right: 0
+@media only screen and (max-width: 992px)
+	.owl-theme 
+		.btn
+			position: relative
+			top: 0
+@media only screen and (max-width: 662px)
+	.owl-carousel .owl-wrapper, .owl-carousel .owl-item
+		transform: translate3d(0, 0, 0)
